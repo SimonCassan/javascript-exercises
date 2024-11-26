@@ -1,8 +1,8 @@
-const removeFromArray = function (array, nb) {
+const removeFromArray = function (array, ...args) {
     let newArray = [];
     let j = 0;
     for (let i = 0; i < array.length; i++) {
-        if (array[i] !== nb) {
+        if (!args.includes(array[i])) {
             newArray[j] = array[i];
             j++;
         }
