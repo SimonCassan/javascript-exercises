@@ -4,7 +4,8 @@ const convertToCelsius = function (tempF) {
 };
 
 const convertToFahrenheit = function (tempC) {
-  const tempF = 
+  const tempF = Math.round((tempC * (9 / 5) + 32) * 10) / 10;
+  return tempF;
 };
 
 // Do not edit below this line
