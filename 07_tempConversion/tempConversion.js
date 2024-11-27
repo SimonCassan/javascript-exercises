@@ -1,10 +1,10 @@
 const convertToCelsius = function (tempF) {
-  const tempC = (Math.round((tempF - 32) * (5 / 9) * 10)) / 10;
+  const tempC = +((tempF - 32) * 5 / 9).toFixed(1);;
   return tempC;
 };
 
 const convertToFahrenheit = function (tempC) {
-  const tempF = Math.round((tempC * (9 / 5) + 32) * 10) / 10;
+  const tempF = +(tempC * 9 / 5 + 32).toFixed(1);
   return tempF;
 };
 
